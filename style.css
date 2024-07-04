@@ -1,0 +1,30 @@
+:root {
+    --primary-red: #ee2a35;
+    --secondary-red: #A4040D;
+    --primary-green: #009736;
+    --secondary-green: #015F23;
+    --dark-gray: #767373;
+    --light-gray: #EFEFEF;
+  }
+
+  .league-gothic {
+    font-family: "League Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+  .quattrocento-regular {
+    font-family: "Quattrocento", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .quattrocento-bold {
+    font-family: "Quattrocento", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
