@@ -1,5 +1,5 @@
 * {
-  border: 1px solid #73ad21;
+  /* border: 1px solid #73ad21; */
   margin: 0;
   padding: 0;
 }
@@ -37,19 +37,26 @@
 
 /* Header and Nav */
 header {
-  padding: 2vh 3vw;
+  padding: 0.8vh 12vw;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   position: sticky;
   top: 0;
   z-index: 9999;
+  align-items: center;
+  border-color: aqua;
+  align-content: center;
+}
+
+#logo{
+  height: 80px;
 }
 
 header button {
-  height: 3.2vh;
-  width: 3.2vw;
-  margin-right: 8vw
+  height: 50px;
+  width: 100px;
+
 }
 
 header a {
@@ -57,14 +64,14 @@ header a {
 }
 
 nav {
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
   height: 50%;
-  width: 40%;
+  width: 50%;
 }
 
 nav ul {
   list-style: none;
-  border: 3px solid #a4040d;
+  /* border: 3px solid #a4040d; */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -74,7 +81,7 @@ ul li {
   display: inline-block;
   margin: 5px;
   padding: 5px;
-  border-color: purple;
+  /* border-color: purple; */
 }
 
 .dropdown {
@@ -109,4 +116,24 @@ li a:hover, .dropdown:hover .dropbtn{
 
 .dropdown-content a:hover {
   background-color: #e4dfdf;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  header {
+    padding: 0.8vh 6vw;
+  }
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+    padding: 0.8vh 4vw;
+  }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+ 
 }
