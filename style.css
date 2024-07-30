@@ -1,30 +1,73 @@
+* {
+  border: 1px solid #73ad21;
+  margin: 0;
+  padding: 0;
+}
+
+/* Colors */
 :root {
-    --primary-red: #ee2a35;
-    --secondary-red: #A4040D;
-    --primary-green: #009736;
-    --secondary-green: #015F23;
-    --dark-gray: #767373;
-    --light-gray: #EFEFEF;
-  }
+  --primary-red: #ee2a35;
+  --secondary-red: #a4040d;
+  --primary-green: #009736;
+  --secondary-green: #015f23;
+  --dark-gray: #767373;
+  --light-gray: #efefef;
+}
 
-  .league-gothic {
-    font-family: "League Gothic", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
+/* Fonts */
+.league-gothic {
+  font-family: "League Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
 
-  .quattrocento-regular {
-    font-family: "Quattrocento", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .quattrocento-bold {
-    font-family: "Quattrocento", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
+.quattrocento-regular {
+  font-family: "Quattrocento", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quattrocento-bold {
+  font-family: "Quattrocento", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Header and Nav */
+header {
+  padding: 10px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+header a {
+  text-decoration: none;
+}
+
+nav {
+  border: 3px solid blue;
+  height: 50%;
+  width: 450px;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  border: 3px solid #a4040d;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+ul li {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  border-color: purple;
+}
