@@ -37,6 +37,7 @@
 
 /* Header and Nav */
 header {
+  background-color: white;
   padding: 0.8vh 12vw;
   display: flex;
   justify-content: space-between;
@@ -49,14 +50,13 @@ header {
   align-content: center;
 }
 
-#logo{
+#logo {
   height: 80px;
 }
 
 header button {
   height: 50px;
   width: 100px;
-
 }
 
 header a {
@@ -93,7 +93,7 @@ ul li {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -106,7 +106,8 @@ ul li {
   border-bottom: 1px solid black;
 }
 
-li a:hover, .dropdown:hover .dropbtn{
+li a:hover,
+.dropdown:hover .dropbtn {
   color: black;
 }
 
@@ -121,7 +122,8 @@ li a:hover, .dropdown:hover .dropbtn{
 /* Hero Img */
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/imgs/sample.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/imgs/sample.jpg);
   height: 80vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -159,7 +161,6 @@ li a:hover, .dropdown:hover .dropbtn{
   background-color: #ddd;
   text-align: center;
   cursor: pointer;
-  
 }
 
 .hero-text button:hover {
@@ -167,12 +168,44 @@ li a:hover, .dropdown:hover .dropbtn{
   color: white;
 }
 
+/* Mission Statement */
 
+#mission {
+  border: 3px solid green;
+  height: 30vh;
+  padding: 0.8vh 7vw;
+  margin-top: 5vh;
+}
 
+#mission div {
+  border: 3px solid blue;
+  align-content: center;
+}
 
+#mission h2 {
+  border: 3px solid red;
+  font-size: 6rem;
+  line-height: 10rem;
+  word-spacing: 100rem;
+  padding: 10px;
+}
 
+#mission p {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
 
+.row {
+  display: -webkit-flex;
+  display: flex;
+}
 
+.column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+}
 
 /* Responsive Screen Size */
 
@@ -191,5 +224,14 @@ li a:hover, .dropdown:hover .dropbtn{
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
- 
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
+  #mission {
+    border: 3px solid red;
+    height: 20vh;
+    padding: 0.2vh 2vw;
+  }
 }
