@@ -363,47 +363,208 @@ nav ul li a:hover {
   margin-bottom: 10px;
 }
 
-/* Footer */
-footer {
-  background-color: #333;
-  padding: 50px;
-  color: white;
+/* TAKE ACTION Section */
+.take-action {
+  background-color: #f4f4f4;
+  padding: 60px 20px;
+  text-align: center;
 }
 
-.footer-content {
-  max-width: 1000px;
+.take-action h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.take-action p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 700px;
   margin: 0 auto;
 }
 
-footer .row {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
+/* Action Cards Section */
+.action-cards {
+  padding: 60px 20px;
 }
 
-footer .column {
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: #f4f4f4;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.card a.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 2px solid #333;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card a.btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Large Card and Small Card Styling */
+.card-large {
   flex: 1;
+  margin-right: 20px;
+}
+
+.card-small {
+  flex: 0.5;
+  margin-right: 20px;
+}
+
+
+/* FOOTER section */
+footer {
+  background-color: #f8f8f8;
+  padding: 40px 20px;
   text-align: center;
 }
 
-footer .social-icons {
-  list-style-type: none;
-  padding: 0;
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
-  gap: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
-footer .social-icons li {
-  display: inline-block;
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
-footer .social-icons li a img {
+.column {
+  flex: 1;
+  min-width: 150px;
+  margin: 0 10px;
+  text-align: left;
+}
+
+.buttons-column {
+  text-align: left;
+}
+
+.buttons-column button {
+  display: block;
+  width: 200px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: transparent;
+  border: 2px solid #007bff;
+  color: #007bff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.buttons-column button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  margin-top: 20px;
+}
+
+.social-icons li {
+  list-style: none;
+  margin-right: 10px;
+}
+
+.social-icons li img {
+  width: 24px;
   height: 24px;
 }
 
-footer p {
+.logo-column {
   text-align: center;
-  margin-top: 20px;
-  font-size: 14px;
 }
+
+.logo-column img {
+  max-width: 150px;
+}
+
+.links-column h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.links-column ul {
+  padding: 0;
+  list-style: none;
+}
+
+.links-column ul li {
+  margin-bottom: 10px;
+}
+
+.links-column ul li a {
+  text-decoration: none;
+  color: #555;
+}
+
+.links-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.privacy-policy {
+  margin-top: 30px;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .column {
+    margin: 20px 0;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
